@@ -1,0 +1,154 @@
+:root {
+    --background-color: rgb(17, 15, 65);
+    --black-color: rgb(8, 7, 18);
+    --button-color: rgb(32, 199, 252);
+    --other-color: rgb(18, 24, 74);
+    --font-color: rgb(235, 244, 248);
+    --slow-font-color: rgb(115, 121, 146);
+}
+
+/* ############################################### */
+/*                 HEADER - MENU                   */
+/* ############################################### */
+header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: var(--background-color);
+}
+
+header p {
+    font-size: 2rem;
+}
+
+header a {
+    font-size: 2rem;
+}
+
+.logo{
+    font-size: 4rem;
+    letter-spacing: .3rem;
+    cursor: pointer;
+    color: var(--font-color);
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 1rem;
+    position: relative;
+    padding: 1rem 2.5rem;
+    padding-right: 3.1rem;
+    user-select: none;
+}
+
+.menu a {
+    color: var(--slow-font-color);
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+.menu a:hover {
+    transition: all .1s ease-in-out;
+    color: var(--font-color)
+}
+
+.btn {
+    padding: .5rem 2rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--button-color);
+    color: var(--background-color);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.btn:hover {
+    transition: all .1s ease-in-out;
+    background-color: rgb(83, 215, 255);
+    transform: scale(1.05);
+}
+
+/* ############################################### */
+/*                 FOOTER - RODAPE                 */
+/* ############################################### */
+
+.image {
+    width: auto;
+    height: 50rem;
+}
+.container-main {
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content{
+    width: 80%;
+    padding: 5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.content h2{
+    font-size: 5rem;
+}
+.content span{
+    font-size: 5rem;
+    background-color: var(--other-color);
+    padding: .3rem .5rem;
+    border-radius: 8px;
+    color: var(--button-color);
+}
+.info{
+    width: 50%;
+}
+.info p{
+    color: var(--slow-font-color);
+    font-size: 1.5rem;
+}
+.first, .second{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first{
+    background-color: var(--background-color);
+}
+.second{
+    background-color: var(--black-color);
+}
+
+
+/* ############################################### */
+/*                 FOOTER - RODAPE                 */
+/* ############################################### */
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--other-color);
+}
+
+.footer-container {
+    font-size: 2rem;
+    padding: 2rem;
+}
