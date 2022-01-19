@@ -5,78 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- IMPORT AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- IMPORT CSS -->
-    <link rel="stylesheet" href="styles/padrao.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <title>Mitologia Nórdica</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/padroes.css">
+    <title>Norse Mythology</title>
 </head>
 
 <body>
-    <header class="asd">
-        <a href="#top" class="logo">LOGO</a>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Teste01</a></li>
-                <li><a href="#">Teste02</a></li>
-                <li><a href="#">Teste03</a></li>
+    <header id="menu" class="d-flex jus-around al-center p-20">
+        <a href="#top">
+            <p class="font-40 white fw-600">LOGO</p>
+        </a>
+        <nav>
+            <ul class="d-flex opt">
+                <li class="mr-30"><a href="#" class="slow-white font-20 fw-400">Teste 01</a></li>
+                <li class="mr-30"><a href="#" class="slow-white font-20 fw-400">Teste 02</a></li>
+                <li class="mr-30"><a href="#" class="slow-white font-20 fw-400">Teste 03</a></li>
             </ul>
         </nav>
-        <a href="#" class="btn" id="button">Join</a>
+        <a href="#" class="btn">Join now</a>
     </header>
 
-    <main>
-        <div id="top"></div>
-        <div class="container-main">
-            <div class="first">
-                <div data-aos="fade-right" data-aos-duration="1500" class="content">
-                    <img class="image" src="images/odin-intro.png" alt="deus-odin">
-                    <div class="info">
-                        <h2>Entenda como é a <span class="text-effect">Mitologia Nórdica</span> e quem são seus principais <span class="text-effect">DEUSES</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum vero explicabo ad rerum</p>
-                        <a href="#" class="btn">Aprender</a>
-                    </div>
+    <main class="w-100">
+        <div class="container">
+            <div class="content d-flex w-100 al-center jus-center">
+                <div class="left w-50 d-flex">
+                    <img class="img-odin-intro" src="images/odin-intro.png" alt="odin-intro">
+                </div>
+                <div class="right w-50 d-flex flex-column al-center text-center">
+                    <h2 class="font-60 mb-30">Entenda como é a <span class="bold especial-text">Mitologia Nórdica</span> e quem são seus principais
+                        <span class="bold especial-text">DEUSES</span></h2>
+                    <p class="mb-30 slow-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum vero explicabo ad rerum</p>
+                    <a href="#" class="btn"><p class="font-30">Aprender</p></a>
                 </div>
             </div>
-
-            <div class="second">
-                <div data-aos="fade-left" data-aos-duration="1500" class="content">
-                    <img class="image" src="images/odin-intro.png" alt="deus-odin">
-                    <div class="info">
-                        <h2>Entenda como é a <span class="text-effect">Mitologia Nórdica</span> e quem são seus principais <span class="text-effect">DEUSES</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum vero explicabo ad rerum inventore necessitatibus aperiam hic, atque cumque nesciunt beatae sapiente soluta corrupti consequuntur? Fugiat beatae nulla cum et!</p>
-                    </div>
+        </div>
+        <div class="container bg-dark-blue">
+            <div class="content d-flex w-100 al-center jus-center">
+                <div class="left w-50 d-flex">
+                    <img class="img-odin-intro" src="images/odin-intro.png" alt="odin-intro">
+                </div>
+                <div class="right w-50 d-flex flex-column al-center text-center">
+                    <h2 class="font-60 mb-30">Entenda como é a <span class="bold especial-text">Mitologia Nórdica</span> e quem são seus principais
+                        <span class="bold especial-text">DEUSES</span></h2>
+                    <p class="mb-30 slow-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum vero explicabo ad rerum</p>
+                    <a href="#" class="btn"><p class="font-30">Aprender</p></a>
                 </div>
             </div>
-
-            <div class="second second-content">
-                <div data-aos="fade-left" data-aos-duration="1500" class="content">
-                    <!-- <img class="image" src="images/odin-intro.png" alt="deus-odin"> -->
-                    <div class="info transparent">
-                        <h2>Entenda como é a <span class="text-effect">Mitologia Nórdica</span> e quem são seus principais <span class="text-effect">DEUSES</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum vero explicabo ad rerum inventore necessitatibus aperiam hic, atque cumque nesciunt beatae sapiente soluta corrupti consequuntur? Fugiat beatae nulla cum et!</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="first">
-                <div data-aos="fade-right" data-aos-duration="1500" class="content">
-                    <img class="image" src="images/odin-intro.png" alt="deus-odin">
-                    <div class="info">
-                        <h2>Entenda como é a <span class="text-effect">Mitologia Nórdica</span> e quem são seus principais <span class="text-effect">DEUSES</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum vero explicabo ad rerum inventore necessitatibus aperiam hic, atque cumque nesciunt beatae sapiente soluta corrupti consequuntur? Fugiat beatae nulla cum et!</p>
-                    </div>
-                </div>
-            </div>
-
-            
         </div>
     </main>
 
     <footer>
-        <div class="footer-container">
+        <!-- <div class="footer-container">
             <div class="copy">
                 <p>&copy; 2022 Copyright: Ronaldo Maciel</p>
             </div>
@@ -85,8 +65,12 @@
                 <a href="https://github.com/Ronaldo3030"><i class="fab fa-github-square"></i></a>
                 <a href="https://www.linkedin.com/in/ronaldo-maciel-586619209/"><i class="fab fa-linkedin"></i></a>
             </div>
-        </div>
+        </div> -->
     </footer>
+
+
+    <!-- IMPORT JS -->
+    <script src="js/main.js"></script>
 
     <!-- IMPORT FONT-AWESOME -->
     <script src="https://kit.fontawesome.com/ac5f400d27.js" crossorigin="anonymous"></script>
@@ -94,7 +78,7 @@
     <!-- IMPORT AOS SCRIPT -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
 </body>
 

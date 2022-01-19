@@ -1,0 +1,24 @@
+:root {
+    --background-color: rgb(17, 15, 65);
+    --black-color: rgb(8, 7, 18);
+    --button-color: rgb(32, 199, 252);
+    --other-color: rgb(18, 24, 74);
+    --font-color: rgb(235, 244, 248);
+    --slow-font-color: rgb(115, 121, 146);
+}
+
+.opt li a:hover{
+    transition: color .5s ease-in-out;
+    color: var(--font-color) !important;
+}
+
+.img-odin-intro {
+    width: auto;
+    height: 650px;
+}
+.especial-text{
+    padding: 5px;
+    background-color: var(--other-color);
+    color: var(--button-color);
+    border-radius: 7px;
+}
