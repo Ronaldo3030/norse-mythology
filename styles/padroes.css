@@ -135,8 +135,8 @@
 .blue{
     color: var(--blue) !important;
 }
-.green{
-    color: var(--green) !important;
+.light-blue{
+    color: var(--button-color) !important;
 }
 .gray-green{
     color: var(--dark-green) !important;
@@ -763,4 +763,9 @@
     -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
     filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
     transform: scale(1.1);
+}
+
+.shadow{
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0) !important;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0) !important;
 }

@@ -22,3 +22,35 @@
     color: var(--button-color);
     border-radius: 7px;
 }
+
+.card{
+    cursor: pointer;
+}
+
+.card >img:hover{
+    animation: tremer .001s linear infinite;
+}
+
+.card > img{
+    max-width: 100%;
+    border: 5px solid rgb(8, 7, 18);
+    width: 350px;
+    height: 500px;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.container-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+
+@keyframes tremer {
+    0% {margin-left: 0;}
+    25% {margin-left: 4px;}
+    50% {margin-left: 0;}
+    45% {margin-left: -7px;}
+    100% {margin-left: 0;}
+}

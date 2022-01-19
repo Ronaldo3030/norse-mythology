@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/padroes.css">
@@ -12,7 +13,7 @@
 </head>
 
 <body>
-    <header id="menu" class="d-flex jus-around al-center p-20">
+    <header id="menu" class="d-flex jus-around al-center pt-10 pb-10">
         <a href="#top">
             <p class="font-40 white fw-600">LOGO</p>
         </a>
@@ -29,10 +30,10 @@
     <main class="w-100">
         <div class="container">
             <div class="content d-flex w-100 al-center jus-center">
-                <div class="left w-50 d-flex">
+                <div data-aos="fade-right" class="left w-50 d-flex">
                     <img class="img-odin-intro" src="images/odin-intro.png" alt="odin-intro">
                 </div>
-                <div class="right w-50 d-flex flex-column al-center text-center">
+                <div data-aos="fade-left" class="right w-50 d-flex flex-column al-center text-center">
                     <h2 class="font-60 mb-30">Entenda como é a <span class="bold especial-text">Mitologia Nórdica</span> e quem são seus principais
                         <span class="bold especial-text">DEUSES</span></h2>
                     <p class="mb-30 slow-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum vero explicabo ad rerum</p>
@@ -42,10 +43,10 @@
         </div>
         <div class="container bg-dark-blue">
             <div class="content d-flex w-100 al-center jus-center">
-                <div class="left w-50 d-flex">
+                <div data-aos="fade-right" class="left w-50 d-flex">
                     <img class="img-odin-intro" src="images/odin-intro.png" alt="odin-intro">
                 </div>
-                <div class="right w-50 d-flex flex-column al-center text-center">
+                <div data-aos="fade-left" class="right w-50 d-flex flex-column al-center text-center">
                     <h2 class="font-60 mb-30">Entenda como é a <span class="bold especial-text">Mitologia Nórdica</span> e quem são seus principais
                         <span class="bold especial-text">DEUSES</span></h2>
                     <p class="mb-30 slow-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum vero explicabo ad rerum</p>
@@ -53,6 +54,24 @@
                 </div>
             </div>
         </div>
+        <div  class="container">
+            <h2 class="text-center font-50 mb-20">Alguns dos <span class="bold especial-text">Deuses</span></h2>
+            <div data-aos="zoom-in" id="container-card" class="container-card">
+                <div class="card">
+                    <img id="thor" class="shadow" src="/images/thor.jpg" alt="thor">
+                    <h2 class="text-center reset mt-10 font-40 text-shadow light-blue">Thor</h2>
+                </div>
+                <div class="card">
+                    <img id="odin" class="shadow" src="/images/odin.jpg" alt="odin">
+                    <h2 class="text-center reset mt-10 font-40 text-shadow light-blue">Odin</h2>
+                </div>
+                <div class="card">
+                    <img id="loki" class="shadow" src="/images/loki.png" alt="loki">
+                    <h2 class="text-center reset mt-10 font-40 text-shadow light-blue">Loki</h2>
+                </div>
+            </div>
+        </div>
+        
     </main>
 
     <footer>
@@ -78,7 +97,7 @@
     <!-- IMPORT AOS SCRIPT -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({duration: 1500});
     </script>
 </body>
 
